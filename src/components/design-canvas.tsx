@@ -13,10 +13,12 @@ interface DesignCanvasProps {
   nodes: DesignNode[]
   edges: DesignEdge[]
   onNodePositionChange: (nodeId: string, position: { x: number; y: number }) => void
+  onNodeUpdate: (nodeId: string, nodeData: Partial<DesignNode['data']>) => void
+  onNodeDelete: (nodeId: string) => void
   isGenerating: boolean
 }
 
-export function DesignCanvas({ nodes, edges, onNodePositionChange, isGenerating }: DesignCanvasProps) {
+export function DesignCanvas({ nodes, edges, onNodePositionChange, onNodeUpdate, onNodeDelete, isGenerating }: DesignCanvasProps) {
   const canvasRef = useRef<HTMLDivElement>(null)
   const [zoom, setZoom] = useState(1)
   const [pan, setPan] = useState({ x: 0, y: 0 })
@@ -124,7 +126,14 @@ export function DesignCanvas({ nodes, edges, onNodePositionChange, isGenerating 
 
           {/* Nodes */}
           {nodes.map((node) => (
-            <NodeComponent key={node.id} node={node} onPositionChange={onNodePositionChange} zoom={zoom} />
+            <NodeComponent 
+              key={node.id} 
+              node={node} 
+              onPositionChange={onNodePositionChange} 
+              onUpdate={onNodeUpdate}
+              onDelete={onNodeDelete}
+              zoom={zoom} 
+            />
           ))}
 
           {/* Loading indicator */}

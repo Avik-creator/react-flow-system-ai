@@ -71,11 +71,11 @@ export function ChatInterface({
 
           onUpdateFlow(nodes, edges)
           
-          // Add success message
+          // Add success message with system description
           setMessages(prev => [...prev, {
             id: Date.now().toString(),
             role: 'assistant' as const,
-            content: 'Design generated successfully!'
+            content: object.description || 'Design generated successfully!'
           }])
         } catch (error) {
           console.error("Error processing system design:", error)

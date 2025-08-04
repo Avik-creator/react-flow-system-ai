@@ -14,5 +14,6 @@ export const systemDesignSchema = z.object({
       to: z.string().describe('Target component name'),
       description: z.string().optional().describe('Optional description of the connection'),
     })
-  ).describe('List of connections between components')
+  ).describe('List of connections between components'),
+  description: z.string().describe('Brief description of the system')
 })
