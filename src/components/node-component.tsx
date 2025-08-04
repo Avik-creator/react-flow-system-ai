@@ -71,14 +71,12 @@ export function NodeComponent({ node, onPositionChange, onUpdate, onDelete, zoom
   const handleEdit = useCallback((e: React.MouseEvent) => {
     e.stopPropagation()
     e.preventDefault()
-    console.log('Edit button clicked for node:', node.id)
     setShowEditDialog(true)
-  }, [node.id])
+  }, [])
 
   const handleDelete = useCallback((e: React.MouseEvent) => {
     e.stopPropagation()
     e.preventDefault()
-    console.log('Delete button clicked for node:', node.id)
     onDelete(node.id)
   }, [node.id, onDelete])
 
@@ -97,7 +95,6 @@ export function NodeComponent({ node, onPositionChange, onUpdate, onDelete, zoom
 
   const handleEditSubmit = useCallback((e: React.FormEvent) => {
     e.preventDefault()
-    console.log('Updating node:', node.id, 'with data:', editData)
     onUpdate(node.id, {
       label: editData.label,
       description: editData.description || undefined,

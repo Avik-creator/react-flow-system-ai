@@ -139,13 +139,13 @@ export function ChatInterface({
         <div className="space-y-4">
           {messages.length === 0 && (
             <div className="text-center text-gray-500 py-8">
-              <p className="mb-4">👋 Hi! I'm your AI system design assistant.</p>
+              <p className="mb-4">👋 Hi! I&apos;m your AI system design assistant.</p>
               <p className="text-sm">
-                Describe the system you want to build and I'll create a visual architecture diagram for you.
+                Describe the system you want to build and I&apos;ll create a visual architecture diagram for you.
               </p>
               <div className="mt-4 text-xs space-y-1">
-                <p>Try: "Design a microservices e-commerce system"</p>
-                <p>Or: "Create a real-time chat application architecture"</p>
+                <p>Try: &ldquo;Design a microservices e-commerce system&rdquo;</p>
+                <p>Or: &ldquo;Create a real-time chat application architecture&rdquo;</p>
               </div>
             </div>
           )}

@@ -61,7 +61,7 @@ export function SystemDesignBuilder() {
       <div className="w-96 border-r bg-white flex flex-col">
         <div className="p-4 border-b">
           <h1 className="text-xl font-semibold">AI System Design Builder</h1>
-          <p className="text-sm text-gray-600 mt-1">Describe your system architecture and I'll build it for you</p>
+          <p className="text-sm text-gray-600 mt-1">Describe your system architecture and I&apos;ll build it for you</p>
         </div>
         <ChatInterface
           onUpdateFlow={updateFlow}
@@ -107,7 +107,7 @@ export function SystemDesignBuilder() {
               <Settings className="w-12 h-12 mx-auto text-gray-400 mb-4" />
               <h3 className="text-lg font-medium text-gray-900 mb-2">Start Building Your System</h3>
               <p className="text-gray-600 max-w-sm">
-                Describe your system architecture in the chat and I'll create a visual diagram for you.
+                Describe your system architecture in the chat and I&apos;ll create a visual diagram for you.
               </p>
             </div>
           </div>
