@@ -122,7 +122,7 @@ export function ExportPanel({ nodes, edges, onClose }: ExportPanelProps) {
 
           <div className="space-y-2">
             <Label htmlFor="format">Format</Label>
-            <Select value={format} onValueChange={(value: string) => setFormat(value)}>
+            <Select value={format} onValueChange={(value: "png" | "jpeg" | "svg") => setFormat(value)}>
               <SelectTrigger>
                 <SelectValue />
               </SelectTrigger>
