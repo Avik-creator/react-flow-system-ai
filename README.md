@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# React Flow System AI
 
-## Getting Started
+[![Diagram](https://systemdesign.avikmukherjee.me/Diagram.png)](https://systemdesign.avikmukherjee.me/Diagram.png)
 
-First, run the development server:
+A visual, AI-powered system design builder built with Next.js. Describe your system architecture in natural language and watch as the app generates a visual diagram for you. You can also manually add, edit, and delete nodes to customize your architecture.
+
+---
+
+## 🚀 Features
+
+- **AI-Powered System Design**: Describe your system in plain English and get an instant architecture diagram.
+- **Manual Editing**: Add, edit, and delete nodes and connections directly on the canvas.
+- **Custom Blocks**: Create and reuse your own custom system components.
+- **Export**: Download your diagram as PNG, JPEG, or SVG.
+- **Modern UI**: Built with Next.js, React, and a clean, responsive interface.
+
+---
+
+## 🖼️ Live Diagram Example
+
+You can view a sample exported diagram here:  
+[https://systemdesign.avikmukherjee.me/Diagram.png](https://systemdesign.avikmukherjee.me/Diagram.png)
+
+---
+
+## 🛠️ Getting Started
+
+Clone the repo:
+
+```bash
+git clone https://github.com/Avik-creator/react-flow-system-ai.git
+cd react-flow-system-ai
+```
+
+Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+bun install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
 # or
-pnpm dev
-# or
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Project Structure
 
-## Learn More
+- `src/` – Main application source code
+- `components.json` – Component definitions
+- `README.md` – This file
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 👤 Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Avik Mukherjee**  
+  [GitHub: Avik-creator](https://github.com/Avik-creator/react-flow-system-ai)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Live Demo**: [https://systemdesign.avikmukherjee.me/](https://systemdesign.avikmukherjee.me/)
+- **GitHub Repo**: [https://github.com/Avik-creator/react-flow-system-ai](https://github.com/Avik-creator/react-flow-system-ai)
